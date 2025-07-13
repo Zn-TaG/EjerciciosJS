@@ -53,18 +53,28 @@ export class celular {
             });
             let appToUnstall = prompt(`Ingrese el nombre de la aplicación que desea desinstalar:`);
 
-            this.listAplicaciones.forEach(element => {
-                if(element.aplication.toLowerCase() === appToUnstall.toLowerCase()){
-                    this.discoDuro += element.tamaño;
-                    console.log(`Desinstalando aplicación: ${element.aplication}`);
+            if(this.listAplicaciones.length > 1){
+                this.listAplicaciones.forEach(element => {
+                    if(element.aplication.toLowerCase() ===     appToUnstall.toLowerCase()){
+                        this.discoDuro += element.tamaño;
+                        console.log(`Desinstalando aplicación: ${element.aplication}`);
 
-                    this.listAplicaciones.slice(element, 1);
-                    console.log(`Aplicación desinstalada ${this.listAplicaciones.length}`);
-                } 
-                else {
-                    console.log(`La aplicación ${appToUnstall} no está instalada.`);
-                }
-            });
+                        this.listAplicaciones.slice(element, 1);
+                        console.log(`Aplicación desinstalada ${this.    listAplicaciones.length}`);
+                    } 
+                    else {
+                        console.log(`La aplicación ${appToUnstall}  no está instalada.`);
+                    }
+                });
+            }
+            else if(this.listAplicaciones.length == 1){
+                this.discoDuro += this.listAplicaciones[0].tamaño;
+                this.listAplicaciones = [];
+                console.log(`Desinstalando aplicación: ${appToUnstall}`);
+            }
+            else {
+                console.log(`No hay aplicaciones instaladas para desinstalar.`);
+            } 
         }
     }
 
