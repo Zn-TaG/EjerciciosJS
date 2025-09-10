@@ -1,0 +1,33 @@
+body {
+    background-color: #444;
+    color: #fff;
+}
+.container {
+    width: 600px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 35px #000;
+    padding: 10px;
+    text-align: center;
+    margin:auto;
+    margin-top: 80px;
+}
+.container-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    border-bottom: 1px solid #fff;
+
+    padding: 5px;
+}
+th {
+    padding: 7px;
+    font-size: 18px;
+}
+#Total td{
+    border: none;
+}
+.Resultado {
+    color: #fff;
+}
