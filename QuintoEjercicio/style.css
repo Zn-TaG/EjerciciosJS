@@ -31,3 +31,27 @@ th {
 .Resultado {
     color: #fff;
 }
+
+.container-javascript {
+    width: 600px;
+    height: 100px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+h4 {
+    background-color: aqua;
+    color: #000;
+    text-align: end;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    border-top-left-radius: 10px;
+}
+code {
+    padding-left: 10px;
+}
+nav {
+    width: 100%;
+     
+}
