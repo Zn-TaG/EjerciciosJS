@@ -1,6 +1,7 @@
 body {
     background-color: #444;
     color: #fff;
+    margin: 0;
 }
 .container {
     width: 600px;
@@ -54,4 +55,34 @@ code {
 nav {
     width: 100%;
      
+}
+.nav {
+    background-color: cadetblue;
+}
+.nav-list{
+    margin: 0;
+}
+.nav-item {
+    display: inline-block;
+}
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+.nav-link:hover {
+    background-color: #59e;
+}
+.nav-register {
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    padding: 6px;
+    margin-left: 100px;
+}
+.nav-register:hover {
+    color: #fff;
+    background-color: transparent;
+    border:1px solid #fff;
 }
