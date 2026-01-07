@@ -11,7 +11,14 @@ export class Carrito {
         return this.carritoCompra.push(producto);
     }
     removerProducto(nombre){
-        this.carritoCompra.pop(nombre);
+        this.carritoCompra.forEach(producto => {
+            if(producto.nombre == nombre){
+                return this.carritoCompra.splice(this.carritoCompra.indexOf(producto), 1);
+            }
+        })
+    }
+    mostrarCarrito(){
+        return this.carritoCompra
     }
     carritoDescuento(user){
         if(user.status == "premium"){
