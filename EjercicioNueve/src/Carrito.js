@@ -28,6 +28,9 @@ export class Carrito {
                 console.log(`Precio con descuento: ${producto.precio}`);
             })
         }
+        else {
+            console.log(`Tu estado de usuario no es Premium`)
+        }
     }
     mostrarTotal(){
         return this.carritoCompra.reduce((acc , {precio}) => acc + precio, 0);
