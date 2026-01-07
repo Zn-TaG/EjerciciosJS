@@ -24,7 +24,7 @@
 // console.log(jose);
 
 
-//forma de crear un objeto con un constructor, sin utilizar la palabra new, pero dando acceso a las propiedades del objeto (modificarlas propiedades del objeto)
+//forma de crear un objeto con un constructor, sin utilizar la palabra new, pero dando acceso a las propiedades del objeto (modificar las propiedades del objeto)
 // const rya = Object.create(Programador, {
 //     name: { value: "Rya" },
 //     age: { value: 28 },
